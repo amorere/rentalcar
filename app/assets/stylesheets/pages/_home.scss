@@ -1,1 +1,72 @@
 // Specific CSS for your home-page
+
+.mm-gpr-navigation {
+  overflow-x: unset !important;
+}
+body {
+  background-color: #F3F4F8!important;
+  min-width: initial!important;
+}
+
+body {
+  background-color: #fff;
+  min-width: 320px;
+}
+body {
+  width: 100%;
+}
+body {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+body {
+  background-color: #fff;
+  min-width: 320px;
+}
+body {
+  width: 100%;
+}
+body {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+user agent stylesheet
+body {
+  display: block;
+  margin: 8px;
+}
+html, button, input, select, textarea {
+  font-family: "Ride",Muli,Helvetica,Arial,sans-serif;
+  color: #222;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html {
+  font-family: "Ride",Muli,Helvetica,Arial,sans-serif;
+  color: #222;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+::selection {
+  background: #2f95f7;
+  color: #fff;
+  text-shadow: none;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
