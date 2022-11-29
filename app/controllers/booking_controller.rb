@@ -1,23 +1,27 @@
 class BookingController < ApplicationController
+  before_action :set_car, only: %i[show update destroy edit]
+
   def new
     @booking = Booking.new
   end
 
   def create
-    @booking = Booking.new(booking_params)
+    @booking = Booking.new(booking_params) #en que momento se le asigna el user_id y el car_id
     if @booking.save
       redirect_to cars_path
     else
       render :new, status: :unprocessable_entity
     end
+  # donde se le asigna al car id y el user id a este create?
+  end
+
+  def edit
   end
 
   def update
-    if @car.update(booking_params)
-      redirect_to cars_path(@car)
-    else
-      render :new, status: :unprocessable_entity
-    end
+    @car.update(booking_params)
+    redirect_to cars_path(@car)
+
   end
 
   def pay
