@@ -1,5 +1,5 @@
 class CarsController < ApplicationController
-  before_action :set_car, only: [:show, :update, :destroy]
+  before_action :set_car, only: %i[show update destroy edit]
 
   def index
     @cars = Car.all
@@ -17,6 +17,9 @@ class CarsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
   def new
     @car = Car.new
   end
@@ -31,16 +34,13 @@ class CarsController < ApplicationController
   end
 
   def update
-    if @car.update(car_params)
-      redirect_to car_path(@car)
-    else
-      render :new, status: :unprocessable_entity
-    end
+    @car.update(car_params)
+    redirect_to car_path(@car)
   end
 
   def destroy
     @car.destroy
-    redirect_to flats_path, status: :see_other
+    redirect_to cars_path, status: :see_other
   end
 
   private
