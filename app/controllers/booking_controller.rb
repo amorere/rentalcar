@@ -6,7 +6,7 @@ class BookingController < ApplicationController
   end
 
   def create
-    @booking = Booking.new(booking_params)
+    @booking = Booking.new(booking_params) #en que momento se le asigna el user_id y el car_id
     if @booking.save
       redirect_to cars_path
     else
