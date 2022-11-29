@@ -12,6 +12,7 @@ class BookingController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  # donde se le asigna al car id y el user id a este create?
   end
 
   def edit
