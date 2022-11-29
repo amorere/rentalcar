@@ -1,4 +1,6 @@
 class BookingController < ApplicationController
+  before_action :set_car, only: %i[show update destroy edit]
+
   def new
     @booking = Booking.new
   end
@@ -12,12 +14,13 @@ class BookingController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   def update
-    if @car.update(booking_params)
-      redirect_to cars_path(@car)
-    else
-      render :new, status: :unprocessable_entity
-    end
+    @car.update(booking_params)
+    redirect_to cars_path(@car)
+
   end
 
   def pay
