@@ -21,6 +21,12 @@ car1 = Car.create!(model: "Clio", brand: "Renault", kms: 100000, year: "2010-01-
 
 car2 = Car.create!(model: "Megane", brand: "Renault", kms: 400000, year: "2015-02-32", plate: "ABC435", color: "Azul", capacity: "4", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
 
+car3 = Car.create!(model: "Dino", brand: "Ferrari", kms: 100000, year: "1980-02-22", plate: "ABC915", color: "Rojo", capacity: "4", load: "220", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+
+car4 = Car.create!(model: "x3", brand: "BMW", kms: 500000, year: "2005-02-10", plate: "DPR435", color: "Azul", capacity: "5", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.9", user: user2)
+
+car5 = Car.create!(model: "Fiesta", brand: "Ford", kms: 400000, year: "2000-02-32", plate: "RPI435", color: "Negro", capacity: "2", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "2.6", user: user2)
+
 # create bookings
 puts "creando reservas"
 booking1 = Booking.create!(check_in: "2021-01-01", check_out: "2021-01-05", pick_point: "Av. Rivadavia 1234", drop_point: "Av. Rivadavia 1234", time_check_in: "10:00", time_check_out: "13:00", user: user1, car: car1)
