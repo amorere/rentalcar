@@ -1,7 +1,19 @@
 <h1>Cars#new</h1>
 <p>Find me in app/views/cars/new.html.erb</p>
-<%= simple_form_for(article) do |f| %>
-  <!-- [...] -->
+<%= simple_form_for(@car) do |f| %>
+  <%= f.input :model %>
+  <%= f.input :brand %>
+  <%= f.input :kms %>
+  <%= f.input :year %>
+  <%= f.input :plate %>
+  <%= f.input :color %>
+  <%= f.input :capacity %>
+  <%= f.input :load %>
+  <%= f.input :transmission %>
+  <%= f.input :technical_approval %>
+  <%= f.input :insurance %>
+  <%= f.input :performance %>
+
   <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <!-- [...] -->
+  <%= f.submit %>
 <% end %>
