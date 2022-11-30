@@ -1,17 +1,17 @@
 <div class="container">
 <% @cars.each do |car| %>
-    <div class="card-product">
+    <div class="card-product mb-4">
     <div>
       <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
     </div>
       <div class="card-product-infos">
-        <h2><%= car.model %></h2>
-        <p><%= car.brand %>
-        <p><strong><%= car.capacity %></p>
-        <p></strong> <%= car.color %></p>
-        <p><%= car.transmission %></p>
-        <p><%= car.kms %></p>
-        <p><%= car.load %></p>
+        <h2>Model: <%= car.model %></h2>
+        <p>Brand: <%= car.brand %>
+        <p>Capacity: <%= car.capacity %></p>
+        <p>Color: <%= car.color %></p>
+        <p>Transmission: <%= car.transmission %></p>
+        <p>Kms: <%= car.kms %></p>
+        <p>Load: <%= car.load %></p>
       </div>
     </div>
 <% end %>
