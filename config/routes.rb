@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :cars do
-    resources :bookings, only: %i[new update create pay]
+    resources :bookings, only: %i[new create]
   end
+
+  resources :bookings, only: %i[edit update]
 end

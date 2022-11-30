@@ -1,4 +1,4 @@
-class BookingController < ApplicationController
+class BookingsController < ApplicationController
   before_action :find_booking, only: %i[update edit]
 
   def new
@@ -8,7 +8,7 @@ class BookingController < ApplicationController
 
   def create
     @car = Car.find(params[:car_id])
-    @booking = Booking.new(booking_params) #en que momento se le asigna el user_id y el car_id
+    @booking = Booking.new(booking_params)
     @booking.user_id = current_user.id
     @booking.car_id = @car.id
     if @booking.save
@@ -16,7 +16,7 @@ class BookingController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
-  # donde se le asigna al car id y el user id a este create?
+
   end
 
   def edit
