@@ -2,7 +2,9 @@
 <% @cars.each do |car| %>
     <div class="card-product mb-4">
     <div>
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <% if car.photos.attached? %>
+       <%= cl_image_tag car.photos.last.key  %>
+    <% end %>
     </div>
       <div class="card-product-infos">
         <h2>Model: <%= car.model %></h2>
