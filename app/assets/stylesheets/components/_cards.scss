@@ -1,16 +1,16 @@
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  margin-top: 20px;
-}
+// .cards {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-gap: 16px;
+//   margin-top: 20px;
+// }
 .card-category1 {
   background-image: asset-url('clio.jpg');
   background-size: cover;
   background-position: center;
   height: 250px;
-  width: 140;
-  display: flex;
+  //width: 140;
+  //display: flex;
   justify-content: center;
   align-items: center;
   color: white;

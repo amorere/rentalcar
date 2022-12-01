@@ -49,35 +49,35 @@ file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Audi_
 car2.photos.attach(io: file, filename: "A5.png", content_type: "imagen/png")
 car2.save!
 
-car2 = Car.new(model: "M4", brand: "Renault", kms: 230000, year: "2018-02-32", plate: "ABC258", color: "Gold", capacity: "5", load: "400", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
-file = URI.open("https://www.thedrive.com/content/2018/09/img_0199.jpg?quality=85&auto=webp&optimize=high&quality=70&width=1440")
-car2.photos.attach(io: file, filename: "M4.png", content_type: "imagen/png")
-car2.save!
+# car2 = Car.new(model: "M4", brand: "Renault", kms: 230000, year: "2018-02-32", plate: "ABC258", color: "Gold", capacity: "5", load: "400", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+# file = URI.open("https://www.thedrive.com/content/2018/09/img_0199.jpg?quality=85&auto=webp&optimize=high&quality=70&width=1440")
+# car2.photos.attach(io: file, filename: "M4.png", content_type: "imagen/png")
+# car2.save!
 
-car2 = Car.new(model: "i20", brand: "Hyundai", kms: 230000, year: "2021-02-32", plate: "ABC159", color: "Blanco", capacity: "5", load: "400", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
-file = URI.open("https://www.thedrive.com/content/2018/09/img_0199.jpg?quality=85&auto=webp&optimize=high&quality=70&width=1440")
-car2.photos.attach(io: file, filename: "i20.png", content_type: "imagen/png")
-car2.save!
+# car2 = Car.new(model: "i20", brand: "Hyundai", kms: 230000, year: "2021-02-32", plate: "ABC159", color: "Blanco", capacity: "5", load: "400", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+# file = URI.open("https://www.thedrive.com/content/2018/09/img_0199.jpg?quality=85&auto=webp&optimize=high&quality=70&width=1440")
+# car2.photos.attach(io: file, filename: "i20.png", content_type: "imagen/png")
+# car2.save!
 
-car2 = Car.new(model: "Frontier", brand: "Nissan", kms: 250000, year: "2021-02-32", plate: "ABC753", color: "Gris", capacity: "5", load: "800", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
-file = URI.open("https://www.thedrive.com/content/2018/09/img_0199.jpg?quality=85&auto=webp&optimize=high&quality=70&width=1440")
-car2.photos.attach(io: file, filename: "Frontier.png", content_type: "imagen/png")
-car2.save!
+# car2 = Car.new(model: "Frontier", brand: "Nissan", kms: 250000, year: "2021-02-32", plate: "ABC753", color: "Gris", capacity: "5", load: "800", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+# file = URI.open("https://www.thedrive.com/content/2018/09/img_0199.jpg?quality=85&auto=webp&optimize=high&quality=70&width=1440")
+# car2.photos.attach(io: file, filename: "Frontier.png", content_type: "imagen/png")
+# car2.save!
 
-car2 = Car.new(model: "Ranger", brand: "Ford", kms: 240000, year: "2021-02-32", plate: "ABC951", color: "Azul", capacity: "5", load: "800", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
-file = URI.open("https://cdn.motor1.com/images/mgl/90zz0/s1/ford-ranger-2020-mas-equipamiento-seguridad-y-potencia-para-la-pick-up-fabricada-en-pacheco.jpg")
-car2.photos.attach(io: file, filename: "Ranger.png", content_type: "imagen/png")
-car2.save!
+# car2 = Car.new(model: "Ranger", brand: "Ford", kms: 240000, year: "2021-02-32", plate: "ABC951", color: "Azul", capacity: "5", load: "800", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+# file = URI.open("https://cdn.motor1.com/images/mgl/90zz0/s1/ford-ranger-2020-mas-equipamiento-seguridad-y-potencia-para-la-pick-up-fabricada-en-pacheco.jpg")
+# car2.photos.attach(io: file, filename: "Ranger.png", content_type: "imagen/png")
+# car2.save!
 
-car2 = Car.new(model: "Cx-5", brand: "Mazda", kms: 10000, year: "2022-02-32", plate: "ABC369", color: "Blanco", capacity: "5", load: "600", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
-file = URI.open("https://www.topgear.com/sites/default/files/cars-car/image/2021/02/cx-5-skyactiv-g-awd-gt-sport-auto-action-3.jpg")
-car2.photos.attach(io: file, filename: "Cx-5.png", content_type: "imagen/png")
-car2.save!
+# car2 = Car.new(model: "Cx-5", brand: "Mazda", kms: 10000, year: "2022-02-32", plate: "ABC369", color: "Blanco", capacity: "5", load: "600", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+# file = URI.open("https://www.topgear.com/sites/default/files/cars-car/image/2021/02/cx-5-skyactiv-g-awd-gt-sport-auto-action-3.jpg")
+# car2.photos.attach(io: file, filename: "Cx-5.png", content_type: "imagen/png")
+# car2.save!
 
-car2 = Car.new(model: "Fiesta", brand: "Ford", kms: 26000, year: "2021-02-32", plate: "ABC752", color: "Naranja", capacity: "5", load: "500", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
-file = URI.open("https://www.diariomotor.com/imagenes/picscache/1920x1600c/FORD_FIESTA2016_TITANIUM_34_FRONT_01_1920x1600c.jpg")
-car2.photos.attach(io: file, filename: "Fiesta.png", content_type: "imagen/png")
-car2.save!
+# car2 = Car.new(model: "Fiesta", brand: "Ford", kms: 26000, year: "2021-02-32", plate: "ABC752", color: "Naranja", capacity: "5", load: "500", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+# file = URI.open("https://www.diariomotor.com/imagenes/picscache/1920x1600c/FORD_FIESTA2016_TITANIUM_34_FRONT_01_1920x1600c.jpg")
+# car2.photos.attach(io: file, filename: "Fiesta.png", content_type: "imagen/png")
+# car2.save!
 
 car3 = Car.create!(model: "Dino", brand: "Ferrari", kms: 100000, year: "1980-02-22", plate: "ABC915", color: "Rojo", capacity: "4", load: "220", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
 
