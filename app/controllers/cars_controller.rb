@@ -26,6 +26,7 @@ class CarsController < ApplicationController
 
   def create
     @car = Car.new(car_params)
+    @car.user_id = current_user.id
     if @car.save
       redirect_to cars_path
     else
@@ -50,6 +51,6 @@ class CarsController < ApplicationController
   end
 
   def car_params
-    params.require(:car).permit(:model, :brand, :kms, :year, :plate, :color, :capacity, :load, :transmission, :technical_approval, :insurance, :performance)
+    params.require(:car).permit(:model, :brand, :kms, :year, :plate, :color, :capacity, :load, :transmission, :technical_approval, :insurance, :performance, photos: [])
   end
 end
