@@ -1,0 +1,14 @@
+<div class="container">
+<% @bookings.each do |book| %>
+    <div class="card-product mb-4">
+      <div class="card-product-infos">
+        <h2>Check in: <%= book.check_in %></h2>
+        <p>Check out: <%= book.check_out %>
+        <p>Pick up point: <%= book.pick_point %></p>
+        <p>Drop point: <%= book.drop_point %></p>
+        <p>Hora de retiro: <%= book.time_check_in %></p>
+        <p>Hora de entrega: <%= book.time_check_out %></p>
+      </div>
+    </div>
+<% end %>
+</div>
