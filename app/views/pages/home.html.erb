@@ -4,20 +4,21 @@
     <p>Donde quieras y cuando quieras, tene un auto a tu alcance.</p>
     <%= link_to "Alquilar", cars_path, class: "btn btn-primary" %>
     <%= link_to "Subir tu auto", new_car_path, class: "btn btn-primary" %>
-    </div>
+  </div>
 </div>
 <div class="container">
-<div class="cards">
-  <div class="card-category1">
-    Renault Clio
-  </div>
-
-  <div class="card-category2">
-    Renault Megane
-  </div>
-
-  <div class="card-category3">
-    Renault Kwid
-  </div>
-</div>
+ <div class="row">
+    <% @cars.each do |car| %>
+      <div class="col-md-4 col-sm-12">
+        <%= link_to car_path(car) do %>
+        <div class="card">
+          <div class="card-category1" style="background-image: url(<%= car.photos.first %>)">
+            <%= car.model %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    <%# <%= image_tag car.photos.first %> %>
+    <% end %>
+ </div>
 </div>
