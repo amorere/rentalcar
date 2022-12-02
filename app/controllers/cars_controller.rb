@@ -15,7 +15,11 @@ class CarsController < ApplicationController
   end
 
   def show
-    
+
+  end
+
+  def misautos
+    @misautos = current_user.cars
   end
 
   def edit
@@ -42,7 +46,7 @@ class CarsController < ApplicationController
 
   def destroy
     @car.destroy
-    redirect_to cars_path, status: :see_other
+    redirect_to misautos_path, status: :see_other
   end
 
   private
@@ -52,6 +56,6 @@ class CarsController < ApplicationController
   end
 
   def car_params
-    params.require(:car).permit(:model, :brand, :kms, :year, :plate, :color, :capacity, :load, :transmission, :technical_approval, :insurance, :performance, photos: [])
+    params.require(:car).permit(:model, :brand, :kms, :year, :plate, :color, :capacity, :load, :transmission, :technical_approval, :insurance, :performance, :daily_price, photos: [])
   end
 end
