@@ -1,0 +1,27 @@
+<div class="container">
+<% @misautos.each do |car| %>
+   <div class= 'container'>
+  <div class="card-product my-4">
+    <div>
+      <% if car.photos.attached? %>
+        <%= cl_image_tag car.photos.last.key  %>
+      <% end %>
+      </div>
+      <div class="card-product-infos">
+        <h2>Model: <%= car.model %></h2>
+        <p>Brand: <%= car.brand %>
+        <p>Capacity: <%= car.capacity %></p>
+        <p>Color: <%= car.color %></p>
+        <p>Transmission: <%= car.transmission %></p>
+        <p>Kms: <%= car.kms %></p>
+        <p>Load: <%= car.load %></p>
+      </div>
+      <div>
+        <%= link_to "Editar Auto",  edit_car_path(car), class: "btn btn-gradient" %>
+        <%= link_to "Eliminar Auto", new_car_booking_path(car), class: "btn btn-gradient" %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+</div>
