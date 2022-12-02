@@ -10,6 +10,7 @@
         <p>Drop point: <%= book.drop_point %></p>
         <p>Hora de retiro: <%= book.time_check_in %></p>
         <p>Hora de entrega: <%= book.time_check_out %></p>
+        <p><strong>Final price: <%= book.final_price %></strong></p>
       </div>
       <div class="pe-5 ms-auto">
       <%= link_to "Cancelar reserva", booking_path(book), class: "btn btn-gradient", data:{turbo_method: :delete, turbo_confirm: "Estas seguro?"}  %>
