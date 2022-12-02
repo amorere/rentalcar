@@ -18,5 +18,10 @@
 
     <%= f.input :photos, as: :file, input_html: { multiple: true } %>
     <%= f.submit %>
+      <div>
+          <% if @car.photos.attached? %>
+            <%= cl_image_tag car.photos.last.key, class: "card-product imagen" %>
+          <% end %>
+        </div>
   <% end %>
 </div>
