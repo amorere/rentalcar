@@ -15,6 +15,8 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.user_id = current_user.id
     @booking.car_id = @car.id
+    days = (@booking.check_out - @booking.check_in).to_i
+    @booking.final_price = @car.daily_price * days
     if @booking.save
       redirect_to bookings_path
     else
