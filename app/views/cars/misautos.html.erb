@@ -18,7 +18,8 @@
       </div>
       <div>
         <%= link_to "Editar Auto",  edit_car_path(car), class: "btn btn-gradient" %>
-        <%= link_to "Eliminar Auto", new_car_booking_path(car), class: "btn btn-gradient" %>
+        <p></p>
+        <%= button_to "Eliminar Auto", car, method: :delete, class: "btn btn-gradient" %>
       </div>
     </div>
   </div>
