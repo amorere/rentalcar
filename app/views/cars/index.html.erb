@@ -14,8 +14,8 @@
         <p>Transmission: <%= car.transmission %></p>
         <p>Kms: <%= car.kms %></p>
         <p>Load: <%= car.load %></p>
+        <div><%= link_to "Alquilar", new_car_booking_path(car) %></div>
       </div>
     </div>
-    <div><%= link_to "Alquilar", new_car_booking_path(car) %></div>
 <% end %>
 </div>
