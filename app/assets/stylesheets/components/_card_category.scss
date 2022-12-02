@@ -5,18 +5,19 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .card-product img {
-  height: 200%;
-  width: 200px;
+  height: 350%;
+  width: 350px;
   object-fit: cover;
 }
 
 .card-product h2 {
   font-size: 18px;
   font-weight: bold;
-  margin: 0;
+  margin: 000;
 }
 
 .card-product p {
