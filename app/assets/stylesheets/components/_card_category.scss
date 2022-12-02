@@ -10,8 +10,8 @@
 }
 
 .card-product img {
-  height: 350%;
-  width: 350px;
+  height: 250px;
+  width: 450px;
   object-fit: cover;
 }
 
@@ -31,4 +31,10 @@
 
 .card-product .card-product-infos {
   padding: 18px;
+}
+
+.imagen {
+  height: 350%;
+  width: 350px;
+  object-fit: cover;
 }
