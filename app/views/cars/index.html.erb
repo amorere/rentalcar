@@ -1,21 +1,24 @@
 <div class="container">
-<% @cars.each do |car| %>
+  <% @cars.each do |car| %>
     <div class="card-product mb-4">
-    <div>
-    <% if car.photos.attached? %>
-       <%= cl_image_tag car.photos.last.key  %>
-    <% end %>
-    </div>
-      <div class="card-product-infos">
-        <h2>Model: <%= car.model %></h2>
-        <p>Brand: <%= car.brand %>
-        <p>Capacity: <%= car.capacity %></p>
-        <p>Color: <%= car.color %></p>
-        <p>Transmission: <%= car.transmission %></p>
-        <p>Kms: <%= car.kms %></p>
-        <p>Load: <%= car.load %></p>
+    <div> raw</div>
+      <div>
+        <% if car.photos.attached? %>
+          <%= cl_image_tag car.photos.last.key  %>
+        <% end %>
+      </div>
+      <div>
+        <div class="card-product-infos">
+          <h2>Model: <%= car.model %></h2>
+          <p>Brand: <%= car.brand %>
+          <p>Capacity: <%= car.capacity %></p>
+          <p>Color: <%= car.color %></p>
+          <p>Transmission: <%= car.transmission %></p>
+          <p>Kms: <%= car.kms %></p>
+          <p>Load: <%= car.load %></p>
+          <div><%= link_to "Alquilar", new_car_booking_path(car) %></div>
+        </div>
       </div>
     </div>
-    <div><%= link_to "Alquilar", new_car_booking_path(car) %></div>
-<% end %>
+  <% end %>
 </div>
