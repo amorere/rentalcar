@@ -1,2 +1,11 @@
-<h1>Booking#new</h1>
-<p>Find me in app/views/booking/new.html.erb</p>
+
+<%= simple_form_for([@car, @booking]) do |f| %>
+  <%= f.input :check_in %>
+  <%= f.input :check_out %>
+  <%= f.input :pick_point %>
+  <%= f.input :drop_point %>
+  <%= f.input :time_check_in %>
+  <%= f.input :time_check_out %>
+
+  <%= f.submit %>
+<% end %>
