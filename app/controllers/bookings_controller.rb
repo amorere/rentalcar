@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :find_booking, only: %i[update edit]
+  before_action :find_booking, only: %i[update edit destroy]
 
   def new
     @car = Car.find(params[:car_id])
@@ -29,6 +29,11 @@ class BookingsController < ApplicationController
   def update
     @booking.update(booking_params)
     redirect_to booking_path(@booking) #esto es car_path? no existe el booking_path
+  end
+
+  def destroy
+    @booking.destroy
+    redirect_to booking_path, status: :see_other
   end
 
   private

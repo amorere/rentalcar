@@ -1,14 +1,19 @@
-<div class="container">
-<% @bookings.each do |book| %>
-    <div class="card-product mb-4">
-      <div class="card-product-infos">
-        <h2>Check in: <%= book.check_in %></h2>
-        <p>Check out: <%= book.check_out %>
+<div class="container mt-3">
+  <% @bookings.each do |book| %>
+    <div class="card-product mb-4 justify-content-start">
+      <%= cl_image_tag book.car.photos.first.key, class: "card-product imagen" %>
+      <div class="card-product-infos text-left ps-5">
+        <h2>Datos de tu reserva:</h2>
+        <p>Check in: <%= book.check_in %></p>
+        <p>Check out: <%= book.check_out %></p>
         <p>Pick up point: <%= book.pick_point %></p>
         <p>Drop point: <%= book.drop_point %></p>
         <p>Hora de retiro: <%= book.time_check_in %></p>
         <p>Hora de entrega: <%= book.time_check_out %></p>
       </div>
+      <div class="pe-5 ms-auto">
+      <%= link_to "Cancelar reserva", booking_path(book), class: "btn btn-gradient", data:{turbo_method: :delete, turbo_confirm: "Estas seguro?"}  %>
+      </div>
     </div>
-<% end %>
+  <% end %>
 </div>
