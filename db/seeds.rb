@@ -29,22 +29,22 @@ user3.save!
 
 # create cars
 puts "creando autos"
-car1 = Car.new(model: "Clio", brand: "Renault", kms: 100000, year: "2010-01-01", plate: "ABC123", color: "Naranja", capacity: "5", load: "500", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user1)
+car1 = Car.new(model: "Clio", brand: "Renault", kms: 100000, year: "2010-01-01", plate: "ABC123", color: "Naranja", capacity: "5", load: "500", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", daily_price: 10, user: user1)
 file = URI.open("https://www.elcarrocolombiano.com/wp-content/uploads/2019/07/20190728-RENAULT-CLIO-5-2020-PRECIOS-CARACTERISTICAS-Y-VERSIONES-EN-FRANCIA-01.jpg")
 car1.photos.attach(io: file, filename: "clio.png", content_type: "imagen/png")
 car1.save!
 
-car2 = Car.new(model: "Megane", brand: "Renault", kms: 400000, year: "2015-02-32", plate: "ABC435", color: "Azul", capacity: "4", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+car2 = Car.new(model: "Megane", brand: "Renault", kms: 400000, year: "2015-02-32", plate: "ABC435", color: "Azul", capacity: "4", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", daily_price: 15, user: user2)
 file = URI.open("https://www.megautos.com/wp-content/uploads/2020/05/Nuevo-Renault-Megane-2020.jpg")
 car2.photos.attach(io: file, filename: "megane.png", content_type: "imagen/png")
 car2.save!
 
-car2 = Car.new(model: "Camaro Zl1", brand: "Chevrolet", kms: 200000, year: "2019-02-32", plate: "ABC789", color: "Blanco", capacity: "4", load: "420", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+car2 = Car.new(model: "Camaro Zl1", brand: "Chevrolet", kms: 200000, year: "2019-02-32", plate: "ABC789", color: "Blanco", capacity: "4", load: "420", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", daily_price: 12, user: user2)
 file = URI.open("https://i1.wp.com/tiempomotor.com/wp-content/uploads/2019/01/Chevrolet_Camaro_ZL1_1LE_3.jpg?resize=960%2C610&ssl=1")
 car2.photos.attach(io: file, filename: "Camaro Zl1.png", content_type: "imagen/png")
 car2.save!
 
-car2 = Car.new(model: "A5", brand: "Audi", kms: 300000, year: "2020-02-32", plate: "ABC741", color: "Negro", capacity: "5", load: "500", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+car2 = Car.new(model: "A5", brand: "Audi", kms: 300000, year: "2020-02-32", plate: "ABC741", color: "Negro", capacity: "5", load: "500", transmission: "Automatic", technical_approval: true, insurance: true, performance: "1.6", daily_price: 20, user: user2)
 file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Audi_A5_Sportback_F5_IMG_2835.jpg/1200px-Audi_A5_Sportback_F5_IMG_2835.jpg")
 car2.photos.attach(io: file, filename: "A5.png", content_type: "imagen/png")
 car2.save!
@@ -79,11 +79,11 @@ car2.save!
 # car2.photos.attach(io: file, filename: "Fiesta.png", content_type: "imagen/png")
 # car2.save!
 
-car3 = Car.create!(model: "Dino", brand: "Ferrari", kms: 100000, year: "1980-02-22", plate: "ABC915", color: "Rojo", capacity: "4", load: "220", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", user: user2)
+car3 = Car.create!(model: "Dino", brand: "Ferrari", kms: 100000, year: "1980-02-22", plate: "ABC915", color: "Rojo", capacity: "4", load: "220", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", daily_price: 17, user: user2)
 
-car4 = Car.create!(model: "x3", brand: "BMW", kms: 500000, year: "2005-02-10", plate: "DPR435", color: "Azul", capacity: "5", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.9", user: user2)
+car4 = Car.create!(model: "x3", brand: "BMW", kms: 500000, year: "2005-02-10", plate: "DPR435", color: "Azul", capacity: "5", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.9", daily_price: 11, user: user2)
 
-car5 = Car.create!(model: "Fiesta", brand: "Ford", kms: 400000, year: "2000-02-32", plate: "RPI435", color: "Negro", capacity: "2", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "2.6", user: user2)
+car5 = Car.create!(model: "Fiesta", brand: "Ford", kms: 400000, year: "2000-02-32", plate: "RPI435", color: "Negro", capacity: "2", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "2.6", daily_price: 14, user: user2)
 
 # create bookings
 puts "creando reservas"
