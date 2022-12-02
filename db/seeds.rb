@@ -17,10 +17,10 @@ user1 = User.new(email: "julif@gmail.com", password: "123456", name: "Julian", l
 # user1.photo.attach(io: file, filename: "user1.png", content_type: "image/png")
 user1.save!
 
-# user2 = User.new(email: "fiore@gmail.com", password: "6325435", name: "Fiorella", last_name: "Albujar", cell_phone: "13544567890", address: "Av. Copiapo 1234", birth_date: "1992-03-10", dni: "2342563", driver_licence_id: "7567452")
+user2 = User.new(email: "fiore@gmail.com", password: "6325435", name: "Fiorella", last_name: "Albujar", cell_phone: "13544567890", address: "Av. Copiapo 1234", birth_date: "1992-03-10", dni: "2342563", driver_licence_id: "7567452")
 # file = URI.open("https://w7.pngwing.com/pngs/946/841/png-transparent-ironman-helmet-ironman-icon-thumbnail.png")
 # user2.photo.attach(io: file, filename: "user2.png", content_type: "image/png")
-# user2.save!
+user2.save!
 
 # user3 = User.new(email: "gonzalo@gmail.com", password: "6325435", name: "Gonzalo", last_name: "Raggio", cell_phone: "13544567890", address: "Av. Copiapo 1234", birth_date: "1992-03-10", dni: "2342563", driver_licence_id: "7567452")
 # file = URI.open("https://i.pinimg.com/originals/78/c0/ff/78c0ffa388287ae35a6aeb46be35c621.jpg")
@@ -34,10 +34,10 @@ file = URI.open("https://res.cloudinary.com/djro2vmei/image/upload/v1670005786/d
 car1.photos.attach(io: file, filename: "clio.png", content_type: "image/png")
 car1.save!
 
-# car2 = Car.new(model: "Megane", brand: "Renault", kms: 400000, year: "2015-02-21", plate: "ABC435", color: "Azul", capacity: "4", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", daily_price: 15, user: user2)
+car2 = Car.new(model: "Megane", brand: "Renault", kms: 400000, year: "2015-02-21", plate: "ABC435", color: "Azul", capacity: "4", load: "320", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", daily_price: 15, user: user2)
 # file = URI.open("https://www.megautos.com/wp-content/uploads/2020/05/Nuevo-Renault-Megane-2020.jpg")
 # car2.photos.attach(io: file, filename: "megane.png", content_type: "image/png")
-# car2.save!
+car2.save!
 
 # car2 = Car.new(model: "Camaro Zl1", brand: "Chevrolet", kms: 200000, year: "2019-02-23", plate: "ABC789", color: "Blanco", capacity: "4", load: "420", transmission: "Manual", technical_approval: true, insurance: true, performance: "1.6", daily_price: 12, user: user2)
 # file = URI.open("https://i1.wp.com/tiempomotor.com/wp-content/uploads/2019/01/Chevrolet_Camaro_ZL1_1LE_3.jpg?resize=960%2C610&ssl=1")
